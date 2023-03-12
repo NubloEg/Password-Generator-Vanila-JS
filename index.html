@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PasswordGenerator</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__title">Password Generator</div>
+        </header>
+
+        <main class="content">
+            <div class="password_generator">
+                <div class="password">
+                    <input readonly class="new_password" value="1a4Txe3m*%Qm^vdXs!"></input>
+                    <div class="password_icons">
+                        <div class="password_hard">
+                            <div class="password_hard_item"></div>
+                            <div class="password_hard_item"></div>
+                            <div class="password_hard_item"></div>
+                            <div class="password_hard_item"></div>
+                        </div>
+                        <img src="/img//reset.svg" alt="reset" class="password_reset">
+                    </div>
+                </div>
+                <a href="#" class="btn">
+                    <div class="btn_text">Copy Password_</div>
+                    <img class="btn_icon" src="./img/arrow.svg" alt="arrow">
+                </a>
+                <div class="block_input">
+                    <output class="output"for="range">4</output>
+                    <input class="range" type="range" min="4" max="26" value="4" step="1">
+                   
+                </div>
+                <div class="box_checkbox">
+                    <div class="checkbox_left">
+                        <label class="checkbox">
+                            <input checked class="real_checkbox" type="checkbox" />
+                            <span class="new_checkbox"></span>
+                            Uppercase letters
+                        </label>
+                        <label class="checkbox">
+                            <input class="real_checkbox" type="checkbox" />
+                            <span class="new_checkbox"></span>
+                            Numbers
+                        </label>
+                    </div>
+                    <div class="checkbox_right">
+                        <label class="checkbox">
+                            <input class="real_checkbox" type="checkbox" />
+                            <span class="new_checkbox"></span>
+                            Lowercase letters
+                        </label>
+                        <label class="checkbox">
+                            <input class="real_checkbox" type="checkbox" />
+                            <span class="new_checkbox"></span>
+                            Symbols
+                        </label>
+                        
+                    </div>
+                    <div class="error_text disable">Choose one of the items!</div>
+                </div>
+            </div>
+            <div class="password_history">
+                <div class="history_title">Password history</div>
+                <div class="history_items">
+                   
+
+                </div>
+                <div class="history_clear">Clear history</div>
+            </div>
+        </main>
+        
+        <footer class="footer">
+            <img src="/img/volume.svg" alt="volume">
+           <div class="footer_text"> <span>Enable Audio</span> | Keyboard Shortcuts Source Code Author</div></footer>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>

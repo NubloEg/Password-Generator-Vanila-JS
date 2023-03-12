@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Tomorrow:wght@400;600;700&display=swap');
+*{
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    cursor: pointer;
+}
+
+
+body{
+    background:black;
+    height: 100vh;
+    display: flex;
+    padding: 55px 0px;
+    justify-content: center;
+    
+}
+
+.wrapper{
+    
+    max-width: 1440px;
+    width: 100%;
+    border:1px solid black; 
+    border-image:linear-gradient(#00F0FF,#00eeff00) ;
+    border-image-slice: 1;
+    padding: 0px 122px;
+}
+
+.header{
+    margin-top: 100px;
+    display: flex;
+    
+}
+
+.header__title{
+    
+    max-width: 588px;
+    width: 100%;  
+    font-family: 'Tomorrow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+  
+    /* or 100% */
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    /* Aureolin */
+    color: #F8EF00;
+}
+
+
+/* Content */
+
+.content{
+    flex-grow: 1;
+    display: flex;
+    height: 70%;
+    margin-top: 64px;
+    justify-content: space-between;
+    column-gap: 20px;
+    row-gap: 70px;
+    flex-wrap: wrap;
+
+}
+@media(max-width:1162px){
+    .content{
+        max-height: 1000px;
+    }
+}
+
+.password_generator{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+
+
+.password{
+    max-width: 588px;
+    width: 100%;
+    height: 64px;
+    background: rgba(0, 240, 255, 0.1);
+
+    /* Bright Aqua */
+    border: 2px solid #00F0FF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+
+
+.new_password{
+background:none;
+outline: none;
+    /* Base */
+font-family: 'Tomorrow';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+/* identical to box height, or 150% */
+letter-spacing: 0.2em;
+
+/* Bright Aqua */
+color: #00F0FF;
+
+max-width: 588px;
+width: 100%;
+
+}
+.password_icons{
+    display: flex;
+    gap: 14px;
+}
+
+.password_hard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.password_hard_item{
+    width: 20px;
+    height: 3px;
+    background: #00F0FF;
+}
+
+.red{
+    background: #FF003C;
+}
+.password_reset{
+    transition: all 0.5s;
+}
+
+.password_reset:hover{
+    transform: translateY(-3px);
+}
+
+.btn{
+    margin-top: 20px;
+    display: block;
+    max-width: 350px;
+    width: 100%;
+    height: 64px;
+    background: #F8EF00;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 20px 40px;
+    transition: all 0.5s;
+}
+
+.btn:hover{
+    padding: 20px 30px;
+}
+
+.btn:hover .btn_text{
+    font-size:20px;
+}
+
+
+
+.btn_text{
+    font-family: 'Tomorrow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+
+    /* identical to box height, or 150% */
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    /* Black */
+    color: #000000;
+    transition: all 0.5s;
+}
+
+
+
+.block_input{
+    margin-top: 64px;
+    position: relative;
+}
+
+.range{
+    max-width: 588px;
+    width: 100%;
+    cursor: pointer;
+   
+    
+    -webkit-appearance: none;
+    outline: none;
+    background:none;
+    height: 0px;
+    border: 3px solid #00F0FF;
+}
+
+
+
+
+
+.range::-webkit-slider-thumb{
+    position: relative;
+    border-radius: 0;
+    border:none;
+    width: 21px;
+    height: 21px;
+    outline: none;
+
+    /* Aureolin */
+    background: #F8EF00;
+    
+}
+
+.range::-moz-range-thumb{
+    position: relative;
+    border-radius: 0;
+    border:none;
+    width: 21px;
+    height: 21px;
+    outline: none;
+
+    /* Aureolin */
+    background: #F8EF00;
+}
+output{
+    text-align: center;
+    left: -4px;
+    top: -22px;
+    position: absolute;
+    width: 37px;
+    height: 16px;
+    /* Black */
+    background: #000000;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+
+    /* identical to box height, or 133% */
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    /* Alabaster */
+    color: #FAFAFA;
+    }
+
+.box_checkbox{
+    position: relative;
+    margin-top: 64px;
+    display: flex;
+    max-width: 512px;
+    width: 100%;
+    flex-wrap: wrap;
+    column-gap:58px;
+    row-gap: 28px;
+}
+.checkbox_left{
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+}
+
+.checkbox_right{
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+}
+
+.real_checkbox{
+    display: none;
+}
+
+.real_checkbox:checked+.new_checkbox{
+    background:#F8EF00;
+}
+
+.new_checkbox{
+    box-sizing: border-box;
+
+width: 24px;
+height: 24px;
+
+/* Aureolin */
+border: 2px solid #F8EF00;
+}
+
+
+
+.checkbox{
+    cursor: pointer;
+    display: flex;
+    gap: 8px;
+    font-family: 'Tomorrow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+/* identical to box height, or 150% */
+    letter-spacing: 0.2em;
+
+/* Alabaster */
+    color: #FAFAFA;
+}
+
+.error_text{
+    position: absolute;
+    bottom: -50px;
+    font-family: 'Tomorrow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+/* identical to box height, or 150% */
+    letter-spacing: 0.2em;
+
+/* Alabaster */
+    color: #FF003C;
+}
+
+.disable{
+    display: none;
+}
+
+
+.password_history{
+    max-width: 397px;
+    width: 100%;
+}
+
+
+.history_title{
+    
+    font-family: 'Tomorrow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    /* identical to box height, or 120% */
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    /* Alabaster */
+    color: #FAFAFA;
+    margin-bottom: 32px;
+}
+
+.history_items{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    max-height: 293px;
+    overflow: auto;
+}
+
+
+.history_item{
+    height: 40px;
+    max-width: 390px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    color: #FAFAFA;
+   
+}
+
+.history_password{
+    font-family: 'Tomorrow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    /* identical to box height, or 150% */
+    letter-spacing: 0.2em;
+
+    /* Alabaster */
+    color: #FAFAFA;
+
+    opacity: 0.8;
+}
+
+.data_passwor{
+    font-family: 'Barlow';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+
+/* identical to box height, or 133% */
+letter-spacing: 0.2em;
+text-transform: uppercase;
+
+/* Neutral 400 */
+color: #BBBBBB;
+
+opacity: 0.8;
+}
+
+.copy_password{
+    transition: all 0.5s;
+
+}
+
+.copy_password:hover{
+    transform: translateY(-3px)
+}
+.history_clear{
+    margin-top: 37px;
+    text-align: center;
+    font-family: 'Tomorrow';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+/* identical to box height, or 150% */
+letter-spacing: 0.2em;
+
+/* Aureolin */
+color: #F8EF00;
+cursor: pointer;
+transition: all 0.5s;
+}
+
+
+.history_clear:hover{
+    color: #00F0FF;
+}
+/* footer */
+
+
+.footer{
+    flex-shrink: 0;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+
+    /* identical to box height, or 133% */
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    /* Alabaster */
+    color: #FAFAFA;
+    display: flex;
+    gap:14px;
+    align-items:center
+}
+
+
+.footer span{
+    font-family: 'Tomorrow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+
+    /* identical to box height, or 150% */
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    /* Bright Aqua */
+    color: #00F0FF;
+
+
+}

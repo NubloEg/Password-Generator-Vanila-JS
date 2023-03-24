@@ -35,6 +35,12 @@ body{
     padding: 0px 122px;
 }
 
+@media (max-width:440px){
+    .wrapper{
+        padding: 5px;
+    }
+}
+
 .header{
     margin-top: 100px;
     display: flex;
@@ -63,20 +69,15 @@ body{
 /* Content */
 
 .content{
-    flex-grow: 1;
     display: flex;
-    height: 70%;
+   
+    height: 50%;
     margin-top: 64px;
     justify-content: space-between;
     column-gap: 20px;
     row-gap: 70px;
-    flex-wrap: wrap;
+    
 
-}
-@media(max-width:1162px){
-    .content{
-        max-height: 1000px;
-    }
 }
 
 .password_generator{
@@ -205,7 +206,7 @@ width: 100%;
     cursor: pointer;
    
     
-    -webkit-appearance: none;
+    appearance: none;
     outline: none;
     background:none;
     height: 0px;
@@ -453,7 +454,7 @@ transition: all 0.5s;
 
 
 .footer{
-    flex-shrink: 0;
+    margin-top: 161px;
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 400;

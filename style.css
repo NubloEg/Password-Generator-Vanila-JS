@@ -35,11 +35,7 @@ body{
     padding: 0px 122px;
 }
 
-@media (max-width:440px){
-    .wrapper{
-        padding: 5px;
-    }
-}
+
 
 .header{
     margin-top: 100px;
@@ -56,7 +52,7 @@ body{
     font-weight: 700;
     font-size: 40px;
     line-height: 40px;
-  
+    
     /* or 100% */
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -75,8 +71,22 @@ body{
     justify-content: space-between;
     column-gap: 20px;
     row-gap: 70px;
-    flex-wrap: wrap;
+   
 
+}
+
+@media (max-width:660px){
+    .wrapper{
+        padding: 5px;
+    }
+    .content{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header__title{
+        text-align: center;
+    }
 }
 
 .password_generator{

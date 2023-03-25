@@ -71,12 +71,11 @@ body{
 .content{
     display: flex;
    
-    height: 50%;
     margin-top: 64px;
     justify-content: space-between;
     column-gap: 20px;
     row-gap: 70px;
-    
+    flex-wrap: wrap;
 
 }
 
